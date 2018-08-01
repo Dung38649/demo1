@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
         if params[:order]
             @products = Product.order(price: params[:order])  
         end
+        # demo github 
     end
     def new
         @product = Product.new
