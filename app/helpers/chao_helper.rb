@@ -1,0 +1,2 @@
+module ChaoHelper
+end

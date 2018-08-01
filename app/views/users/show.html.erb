@@ -1,0 +1,11 @@
+<div class="front1">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Email : <%= @user.email %></div>
+        <div class="panel-heading">Mật khẩu: <%= '*'*(@user.try(:password_salt).try(:length).to_i)%></div>
+     </div>
+</div>
+<br>
+<div style="padding-left:720px; margin-bottom:100px">
+   <%= link_to 'Chỉnh sửa', edit_user_path(@user), class: "click " %>
+   <%= link_to 'Trở về', products_path, class: "click " %>
+</div>
