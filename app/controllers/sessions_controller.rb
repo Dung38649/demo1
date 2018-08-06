@@ -21,9 +21,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to log_in_path, :notice => "Đã đăng suất"
+    redirect_to log_in_path, :notice => "Đã đăng xuất"
   end
-
-
-
+  
 end

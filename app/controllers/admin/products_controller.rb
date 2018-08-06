@@ -2,9 +2,12 @@ class Admin::ProductsController < ApplicationController
     before_action :require_admin
 
     def require_admin
-        unless current_user.admin?
+        if current_user.blank?
+            redirect_to products_path
+        elsif current_user.admin? == false
             redirect_to people_products_path
         end
+        
         
     end
 
