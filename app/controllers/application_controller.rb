@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
     include Pundit
+    include ApplicationHelper
     protect_from_forgery
     helper_method :current_user
 

@@ -17,7 +17,7 @@
             <div id="user_nav">
       <% if current_user %>
         <b>Tài khoản:</b> <%= current_user.email %><br>
-        <%= link_to "Sửa thông tin", edit_user_path(current_user), class: "click " %>
+        <%= link_to "Sửa thông tin", edit_people_user_path(current_user), class: "click " %>
         <%= link_to "Đăng suất", log_out_path, class: "click " %>
       <% else %>
         <%= link_to "Đăng kí", sign_up_path, class: "click " %>
@@ -29,7 +29,10 @@
 </nav>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/products">Trang chủ</a></li>
+    <li class="breadcrumb-item">
+    
+    <a href="">Trang chủ</a></li>
+
     <li class="breadcrumb-item"><a href="#">Giới thiệu</a></li>
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Phân loại</a>

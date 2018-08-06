@@ -1,6 +1,6 @@
 
 <h1>Đăng kí tài khoản</h1>
-<%= form_for @user do |f| %>
+<%= form_for [:people, @user] do |f| %>
     <% if @user.errors.any? %>
         <ul>
             <% @user.errors.full_messages.each do |ms| %>

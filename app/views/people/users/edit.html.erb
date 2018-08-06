@@ -1,5 +1,5 @@
 <h1>Sửa thông tin tài khoản</h1>
-<%= form_for @user do |f| %>
+<%= form_for [:people, @user] do |f| %>
     <% if @user.errors.any? %>
         <ul>
             <% @user.errors.full_messages.each do |ms| %>
@@ -34,5 +34,5 @@
     </div>
 <% end %>
 <div style="padding-left:1100px;margin-bottom:100px" >
-   <%= link_to 'Trở về', products_path %>
+   <%= link_to 'Trở về', people_product_path %>
 </div>

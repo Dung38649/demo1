@@ -34,7 +34,8 @@
                   </div>
                   <div class="panel-body text-center" style="padding-top: 100px">
                      <p><%= link_to 'Chi tiết', product_path(p), class: "btn btn-primary btn-lg " %></p>
-                     
+                     <p> <%= link_to 'Chỉnh sửa', edit_admin_product_path(p), class: "btn btn-primary btn-lg " %> </p>
+                     <p>  <%= link_to 'Xóa ', admin_product_path(p), class:"btn btn-primary btn-lg",         method: :delete,data: { confirm: 'Ban chat chan xoa' } %></p>
                   </div>
                </div>
             </div>
